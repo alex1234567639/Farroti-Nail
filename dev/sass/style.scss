@@ -1,0 +1,13 @@
+@import "nav";
+@import "cssReset";
+@import "landingPage";
+@import "footer";
+*{
+    font-family: Microsoft JhengHei; 
+    letter-spacing: .5px;
+    line-height: 20px; 
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAF4F3;
+}

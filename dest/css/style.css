@@ -1,0 +1,407 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 70px;
+  background-color: white;
+  z-index: 1000; }
+  .nav .navUl {
+    box-shadow: 1px 1px 2px 2px lightgray;
+    height: 70px;
+    padding-right: 40px; }
+    .nav .navUl .navIcon {
+      display: inline-block; }
+      .nav .navUl .navIcon img {
+        height: 60px;
+        margin-left: 40px;
+        margin-top: 5px; }
+      .nav .navUl .navIcon:hover {
+        cursor: pointer; }
+    .nav .navUl .navLi {
+      width: 97px;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 25px 0;
+      text-align: center;
+      float: right;
+      transform: rotate(0deg); }
+      .nav .navUl .navLi:hover {
+        cursor: pointer;
+        transition-duration: .3s;
+        transform: rotate(5deg);
+        color: #e7a5b1; }
+    .nav .navUl .navLogin, .nav .navUl .navRegister {
+      color: #b15060; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.landingPage1st {
+  margin-top: 70px;
+  height: 60vh;
+  min-height: 550px;
+  background-image: url(../images/banner1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px; }
+  .landingPage1st .bannerText {
+    color: white;
+    font-size: 45px;
+    text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.1), -10px 20px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    margin-left: 13%; }
+  .landingPage1st .scrollDownBtn {
+    transform: translateY(0);
+    margin-top: 170px; }
+    .landingPage1st .scrollDownBtn a {
+      padding-top: 60px; }
+      .landingPage1st .scrollDownBtn a:hover {
+        cursor: pointer; }
+      .landingPage1st .scrollDownBtn a .scrollDownSpan {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 46px;
+        height: 46px;
+        margin-left: -23px;
+        border: 1.5px solid #e7a5b1;
+        border-radius: 100%;
+        box-sizing: border-box; }
+        .landingPage1st .scrollDownBtn a .scrollDownSpan:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          content: '';
+          width: 16px;
+          height: 16px;
+          margin: -12px 0 0 -8px;
+          border-left: 2px solid #d397a2;
+          border-bottom: 2px solid #d397a2;
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          box-sizing: border-box; }
+        .landingPage1st .scrollDownBtn a .scrollDownSpan:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          content: '';
+          width: 44px;
+          height: 44px;
+          box-shadow: 0 0 0 0 rgba(231, 165, 177, 0.5);
+          border-radius: 100%;
+          opacity: 0;
+          -webkit-animation: sdb03 3s infinite;
+          animation: sdb03 3s infinite;
+          box-sizing: border-box; }
+
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.landingPage2nd {
+  padding-top: 80px;
+  width: 1200px;
+  margin: 0 auto;
+  background: #f1e1e5;
+  padding-bottom: 20px; }
+  .landingPage2nd .welcomeTitle {
+    text-align: center; }
+    .landingPage2nd .welcomeTitle img {
+      width: 600px; }
+  .landingPage2nd .landingPage2ndContent {
+    margin-top: 20px; }
+    .landingPage2nd .landingPage2ndContent .landingPage2ndContentLeft {
+      width: 585px;
+      height: 500px;
+      background-image: url(../images/2ndLeft.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block; }
+    .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight {
+      width: 610px;
+      height: 500px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: -10px;
+      background-color: #f1e1e5; }
+      .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .title {
+        margin-top: 50px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        font-size: 25px;
+        color: #5c5c5c; }
+        .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .title:before {
+          border-top: 2px solid gray;
+          content: "";
+          margin: 0 auto;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 90%;
+          z-index: -1; }
+        .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .title span {
+          background: #f1e1e5;
+          padding: 0 15px; }
+      .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .content {
+        margin-top: 60px; }
+        .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .content ul {
+          width: 450px;
+          margin: 0 auto; }
+          .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .content ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 25px; }
+            .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .content ul li span {
+              color: red;
+              font-size: 22px; }
+      .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .contentBtn2ndBox {
+        text-align: center;
+        margin-top: 50px; }
+        .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .contentBtn2ndBox .contentBtn2nd {
+          width: 100px;
+          height: 40px;
+          color: white;
+          background-color: #e7a5b1;
+          border: 1px solid white;
+          border-radius: 5px;
+          font-size: 14px; }
+          .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .contentBtn2ndBox .contentBtn2nd:hover {
+            cursor: pointer;
+            background-color: pink;
+            transition-duration: .5s; }
+
+.landingPage3rd {
+  padding-top: 80px;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding-bottom: 30px; }
+  .landingPage3rd .landingPage3rdTitle {
+    width: 600px;
+    margin: 0 auto; }
+    .landingPage3rd .landingPage3rdTitle .title {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      font-size: 25px;
+      color: #5c5c5c; }
+      .landingPage3rd .landingPage3rdTitle .title:before {
+        border-top: 2px solid gray;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        z-index: -1; }
+      .landingPage3rd .landingPage3rdTitle .title span {
+        background: white;
+        padding: 0 15px; }
+  .landingPage3rd .landingPage3rdContent {
+    margin-top: 50px;
+    height: 350px;
+    overflow-y: hidden;
+    white-space: nowrap; }
+    .landingPage3rd .landingPage3rdContent .landingPage3rdContentCard {
+      width: 300px;
+      height: 320px;
+      display: inline-block;
+      margin: 10px;
+      position: relative; }
+      .landingPage3rd .landingPage3rdContent .landingPage3rdContentCard img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .landingPage3rd .landingPage3rdContent .landingPage3rdContentCard .landingPage3rdContentCardMask {
+        width: 300px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        bottom: 0;
+        white-space: normal;
+        padding: 15px 20px;
+        color: white;
+        box-sizing: border-box; }
+  .landingPage3rd .contentBtn3rdBox {
+    text-align: center;
+    margin-top: 30px; }
+    .landingPage3rd .contentBtn3rdBox .contentBtn3rd {
+      width: 100px;
+      height: 40px;
+      color: white;
+      background-color: #e7a5b1;
+      border: 1px solid white;
+      border-radius: 5px;
+      font-size: 14px; }
+      .landingPage3rd .contentBtn3rdBox .contentBtn3rd:hover {
+        cursor: pointer;
+        background-color: pink;
+        transition-duration: .5s; }
+
+.landingPage4nd {
+  padding-top: 80px;
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  background-color: #f1e1e5; }
+  .landingPage4nd .landingPage4ndTitle {
+    width: 600px;
+    margin: 0 auto; }
+    .landingPage4nd .landingPage4ndTitle .title {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      font-size: 25px;
+      color: #5c5c5c; }
+      .landingPage4nd .landingPage4ndTitle .title:before {
+        border-top: 2px solid gray;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        z-index: -1; }
+      .landingPage4nd .landingPage4ndTitle .title span {
+        background: #f1e1e5;
+        padding: 0 15px; }
+  .landingPage4nd .landingPage4ndContent {
+    margin-top: 50px; }
+    .landingPage4nd .landingPage4ndContent .landingPage4ndContentTop .landingPage4ndContentTopLeft {
+      width: 400px;
+      height: 400px;
+      background-image: url(../images/4thTopLeft.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block; }
+    .landingPage4nd .landingPage4ndContent .landingPage4ndContentTop .landingPage4ndContentTopRight {
+      width: 400px;
+      height: 400px;
+      margin-left: 200px;
+      vertical-align: top;
+      display: inline-block;
+      color: #5c5c5c;
+      text-align: center; }
+      .landingPage4nd .landingPage4ndContent .landingPage4ndContentTop .landingPage4ndContentTopRight ul {
+        margin-top: 20px; }
+        .landingPage4nd .landingPage4ndContent .landingPage4ndContentTop .landingPage4ndContentTopRight ul li {
+          margin-bottom: 10px; }
+    .landingPage4nd .landingPage4ndContent .landingPage4ndContentbot {
+      margin-top: 50px; }
+      .landingPage4nd .landingPage4ndContent .landingPage4ndContentbot .landingPage4ndContentbotLeft {
+        width: 400px;
+        height: 400px;
+        margin-left: 20px;
+        display: inline-block;
+        color: #5c5c5c;
+        padding: 0 20px; }
+        .landingPage4nd .landingPage4ndContent .landingPage4ndContentbot .landingPage4ndContentbotLeft ul {
+          margin-top: 20px; }
+          .landingPage4nd .landingPage4ndContent .landingPage4ndContentbot .landingPage4ndContentbotLeft ul li {
+            margin-bottom: 10px; }
+          .landingPage4nd .landingPage4ndContent .landingPage4ndContentbot .landingPage4ndContentbotLeft ul li.subTitle {
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 20px; }
+      .landingPage4nd .landingPage4ndContent .landingPage4ndContentbot .landingPage4ndContentbotRight {
+        width: 400px;
+        height: 400px;
+        margin-left: 200px;
+        background-image: url(../images/4thTopRight.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        vertical-align: top; }
+
+footer {
+  width: 100%;
+  background-color: #1a1a1a;
+  height: 100px; }
+  footer .footerContent {
+    color: white;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 40px; }
+
+* {
+  font-family: Microsoft JhengHei;
+  letter-spacing: .5px;
+  line-height: 20px;
+  box-sizing: border-box; }
+
+body {
+  background-color: #FAF4F3; }
