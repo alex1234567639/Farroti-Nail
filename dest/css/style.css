@@ -13,9 +13,8 @@
     .nav .navUl .navIcon {
       display: inline-block; }
       .nav .navUl .navIcon img {
-        height: 60px;
-        margin-left: 60px;
-        margin-top: 5px; }
+        height: 70px;
+        margin-left: 70px; }
       .nav .navUl .navIcon:hover {
         cursor: pointer; }
     .nav .navUl .navLi {
@@ -33,7 +32,129 @@
         transform: rotate(5deg);
         color: #e7a5b1; }
     .nav .navUl .navLogin, .nav .navUl .navRegister {
-      color: #b15060; }
+      color: #b15060;
+      width: 50px; }
+
+.login.open {
+  display: block; }
+
+.login {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .login .loginLightbox {
+    width: 400px;
+    height: 320px;
+    background-color: #FAF4F3;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .login .loginLightbox .loginCross {
+      width: 15px;
+      position: absolute;
+      right: 8px;
+      top: 8px; }
+      .login .loginLightbox .loginCross:hover {
+        cursor: pointer; }
+    .login .loginLightbox .title {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      font-size: 20px;
+      color: #5c5c5c;
+      margin-bottom: 30px; }
+      .login .loginLightbox .title:before {
+        border-top: 2px solid gray;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        z-index: -1; }
+      .login .loginLightbox .title span {
+        background-color: #FAF4F3;
+        padding: 0 15px; }
+    .login .loginLightbox .fb .loginFacebook {
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      position: absolute;
+      left: 135px;
+      top: 93px;
+      color: white; }
+    .login .loginLightbox .fb .loginFacebookImg {
+      border-radius: 5px;
+      margin-left: 30px;
+      width: 300px;
+      margin-bottom: 10px;
+      transition-duration: .2s; }
+      .login .loginLightbox .fb .loginFacebookImg:hover {
+        box-shadow: 1px 1px 5px 2px lightgray; }
+    .login .loginLightbox .fb:hover {
+      cursor: pointer; }
+    .login .loginLightbox .google .loginGoogle {
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      position: absolute;
+      left: 145px;
+      top: 160px;
+      color: #666666; }
+    .login .loginLightbox .google .loginGoogleImg {
+      border: 1px solid lightgray;
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin-left: 30px;
+      width: 300px;
+      margin-bottom: 10px;
+      transition-duration: .2s; }
+      .login .loginLightbox .google .loginGoogleImg:hover {
+        box-shadow: 1px 1px 5px 1px lightgray; }
+    .login .loginLightbox .google:hover {
+      cursor: pointer; }
+    .login .loginLightbox .loginForm {
+      text-align: center; }
+      .login .loginLightbox .loginForm input {
+        border: 1px solid lightgray;
+        width: 145px;
+        padding: 5px;
+        margin-bottom: 10px;
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd; }
+        .login .loginLightbox .loginForm input:focus, .login .loginLightbox .loginForm input:hover {
+          border: 1px solid #bbbbbb; }
+      .login .loginLightbox .loginForm button {
+        width: 100px;
+        height: 35px;
+        color: white;
+        background-color: #e7a5b1;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 14px;
+        outline: none; }
+        .login .loginLightbox .loginForm button:hover {
+          cursor: pointer;
+          background-color: pink;
+          transition-duration: .5s; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -91,7 +212,7 @@ table {
     font-size: 45px;
     text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.1), -10px 20px 5px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
-    margin-left: 13%; }
+    margin-left: 20%; }
   .landingPage1st .scrollDownBtn {
     transform: translateY(0);
     margin-top: 170px; }
@@ -230,7 +351,8 @@ table {
           background-color: #e7a5b1;
           border: 1px solid white;
           border-radius: 5px;
-          font-size: 14px; }
+          font-size: 14px;
+          outline: none; }
           .landingPage2nd .landingPage2ndContent .landingPage2ndContentRight .contentBtn2ndBox .contentBtn2nd:hover {
             cursor: pointer;
             background-color: pink;
@@ -300,7 +422,8 @@ table {
       background-color: #e7a5b1;
       border: 1px solid white;
       border-radius: 5px;
-      font-size: 14px; }
+      font-size: 14px;
+      outline: none; }
       .landingPage3rd .contentBtn3rdBox .contentBtn3rd:hover {
         cursor: pointer;
         background-color: pink;

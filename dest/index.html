@@ -6,28 +6,50 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css"> 
-    <!-- <script src="./js/nav.js"></script>  -->
+    <script src="./js/nav.js"></script> 
     <!-- 標籤上的logo -->
     <link rel="booknark" href="./images/logo.png">
     <link rel="shortcut icon" href="./images/logo.png">
-    <title>Farroti Nail 法蘿緹美甲沙龍</title>
+    <title>La Petite cour</title>
 </head>
 <body>
     <div class="nav" id="nav">
     <ul class="navUl">
-        <li class="navIcon"><img src="./images/logo.png"></li>
-        <li class="navLi navLogin">Log In</li> 
-        <li class="navLi navRegister">Register</li> 
-        <li class="navLi">Booking</li> 
-        <li class="navLi">Contact</li> 
-        <li class="navLi">Gallery</li>
-        <li class="navLi">Price List</li>
-        <li class="navLi">Service</li>
-        <!-- <li class="navLi">Our Story</li>               -->
+        <li class="navIcon"><img src="./images/LOGOo.png"></li>
+        <li class="navLi navRegister">註冊</li>
+        <li class="navLi navLogin" id="signIn">登入</li> 
+        <li class="navLi">立即預約</li> 
+        <li class="navLi">聯絡我們</li> 
+        <li class="navLi" id="gallery">作品集</li>
+        <li class="navLi">優質服務</li>
     </ul>
 </div>
+
+<!-- 登入燈箱 -->
+<div class="login" id="login">
+    <div class="loginLightbox">
+        <img class="loginCross" id="loginCross" src="./images/cross.png">
+        <h2 class="title">
+            <span>登入 La Petite cour</span>
+        </h2>
+        <div class="fb" id="fb">
+            <div class="loginFacebook">使用Facebook帳號登入</div>
+            <img class="loginFacebookImg" src="./images/facebook.png">
+        </div>
+        <div class="google" id="google">
+            <div class="loginGoogle">使用Google帳號登入</div>
+            <img class="loginGoogleImg" src="./images/google.png">
+        </div>       
+        <form action="" class="loginForm">
+            <input type="text" placeholder="請輸入帳號">
+            <input type="password" placeholder="請輸入密碼">
+            <br>
+            <button id="loginFormLogin" type="button">登入</button>
+        </form>
+    </div>
+</div>
     <div class="landingPage1st">
-    <div class="bannerText">法蘿緹美甲 Farroti Nail</div>
+    <div class="bannerText">La Petite cour</div>
     <section class="scrollDownBtn">
         <a><span class="scrollDownSpan"></span></a>
     </section>
@@ -41,7 +63,7 @@
         <div class="landingPage2ndContentLeft"></div>
         <div class="landingPage2ndContentRight">
             <h2 class="title">
-                <span>Promotional Activity</span>
+                <span>促銷活動</span>
             </h2>
             <div class="content">
                 <ul>
@@ -65,7 +87,7 @@
 <div class="landingPage3rd">
     <div class="landingPage3rdTitle">
         <h2 class="title">
-            <span>Gallery</span>
+            <span>作品集</span>
         </h2>
     </div>
     <div class="landingPage3rdContent">
@@ -102,7 +124,7 @@
 <div class="landingPage4nd">
     <div class="landingPage4ndTitle">
         <h2 class="title">
-            <span>Our Story</span>
+            <span>關於 La Petite cour</span>
         </h2>
     </div>
     <div class="landingPage4ndContent">
@@ -144,7 +166,7 @@
     </div>
 </div>
     <footer>
-    <div class="footerContent">CopyRight &copy; 2019 Farroti Nail</div>
+    <div class="footerContent">CopyRight &copy; 2019 La Petite cour</div>
 </footer>
     <script src="./js/landingPage.js"></script>
 </body>
