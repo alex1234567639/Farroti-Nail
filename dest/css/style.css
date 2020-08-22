@@ -14,7 +14,7 @@
       display: inline-block; }
       .nav .navUl .navIcon img {
         height: 60px;
-        margin-left: 40px;
+        margin-left: 60px;
         margin-top: 5px; }
       .nav .navUl .navIcon:hover {
         cursor: pointer; }
@@ -377,7 +377,7 @@ table {
             margin-top: 20px; }
       .landingPage4nd .landingPage4ndContent .landingPage4ndContentbot .landingPage4ndContentbotRight {
         width: 400px;
-        height: 400px;
+        height: 430px;
         margin-left: 200px;
         background-image: url(../images/4thTopRight.jpg);
         background-position: center;
