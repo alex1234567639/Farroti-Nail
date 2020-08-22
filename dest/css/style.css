@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav {
   position: fixed;
   top: 0;
@@ -520,6 +521,27 @@ footer {
     margin: 0 auto;
     margin-top: 40px;
     padding-top: 40px; }
+
+.waterfall {
+  　　column-count: 3;
+  　　column-gap: 0; }
+
+.item {
+  　　box-sizing: border-box;
+  　　break-inside: avoid;
+  　　padding: 10px; }
+
+.item-content {
+  　　display: flex;
+  　　flex-direction: column;
+  　　justify-content: center;
+  　　align-items: center;
+  　　padding: 10px;
+  　　height: auto;
+  　　font-size: 20px;
+  　　color: #686868;
+  　　box-sizing: border-box;
+  　　border: 1px solid #ccc; }
 
 * {
   font-family: Microsoft JhengHei;
