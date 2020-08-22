@@ -7,7 +7,7 @@ $(document).ready(function() {
           easing: "swing"
         });
     });
-    $("#gallery").click(function() {
+    $(".gallery").click(function() {
       $("html, body").animate({
         scrollTop: $(".contentBtn2nd").offset().top
       }, {

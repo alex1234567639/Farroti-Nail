@@ -35,6 +35,58 @@
       color: #b15060;
       width: 50px; }
 
+.nav2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 70px;
+  background-color: white;
+  z-index: 1000; }
+  .nav2 .navUl {
+    box-shadow: 1px 1px 2px 2px lightgray;
+    height: 70px;
+    padding-right: 40px; }
+    .nav2 .navUl .navIcon {
+      display: inline-block; }
+      .nav2 .navUl .navIcon img {
+        height: 70px;
+        margin-left: 70px; }
+      .nav2 .navUl .navIcon:hover {
+        cursor: pointer; }
+    .nav2 .navUl .navLi {
+      width: 97px;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 25px 0;
+      text-align: center;
+      float: right;
+      transform: rotate(0deg); }
+      .nav2 .navUl .navLi:hover {
+        cursor: pointer;
+        transition-duration: .3s;
+        transform: rotate(5deg);
+        color: #e7a5b1; }
+    .nav2 .navUl .navLogout {
+      color: #b15060;
+      width: 50px; }
+    .nav2 .navUl .navImg {
+      display: inline-block;
+      border: 1px solid lightgray;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      float: right;
+      margin-top: 10px;
+      margin-left: 20px; }
+      .nav2 .navUl .navImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
 .login.open {
   display: block; }
 
