@@ -473,14 +473,20 @@ table {
         object-fit: cover; }
       .landingPage3rd .landingPage3rdContent .landingPage3rdContentCard .landingPage3rdContentCardMask {
         width: 300px;
-        height: 50px;
-        background-color: rgba(0, 0, 0, 0.5);
+        height: 320px;
+        clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+        background-color: rgba(0, 0, 0, 0.1);
         position: absolute;
         bottom: 0;
         white-space: normal;
         padding: 15px 20px;
         color: white;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        transition-duration: .5s; }
+      .landingPage3rd .landingPage3rdContent .landingPage3rdContentCard:hover {
+        cursor: pointer; }
+        .landingPage3rd .landingPage3rdContent .landingPage3rdContentCard:hover .landingPage3rdContentCardMask {
+          clip-path: polygon(0 100%, 0 90%, 100% 80%, 100% 100%); }
   .landingPage3rd .contentBtn3rdBox {
     text-align: center;
     margin-top: 30px; }
