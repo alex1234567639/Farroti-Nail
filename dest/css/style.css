@@ -144,10 +144,10 @@
       position: relative;
       z-index: 1;
       font-size: 20px;
-      color: #5c5c5c;
+      color: #b15060;
       margin-bottom: 30px; }
       .login .loginLightbox .title:before {
-        border-top: 2px solid gray;
+        border-top: 2px solid #b15060;
         content: "";
         margin: 0 auto;
         position: absolute;
@@ -224,6 +224,138 @@
           cursor: pointer;
           background-color: pink;
           transition-duration: .5s; }
+
+.regist.open {
+  display: block; }
+
+.regist {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .regist .registLightbox {
+    width: 400px;
+    height: 380px;
+    background-color: #FAF4F3;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .regist .registLightbox .cross {
+      width: 15px;
+      position: absolute;
+      right: 8px;
+      top: 8px; }
+      .regist .registLightbox .cross:hover {
+        cursor: pointer; }
+    .regist .registLightbox .title {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      font-size: 20px;
+      color: #b15060;
+      margin-bottom: 30px; }
+      .regist .registLightbox .title:before {
+        border-top: 2px solid #b15060;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        z-index: -1; }
+      .regist .registLightbox .title span {
+        background-color: #FAF4F3;
+        padding: 0 15px; }
+    .regist .registLightbox .fb .registFacebook {
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      position: absolute;
+      left: 135px;
+      top: 93px;
+      color: white; }
+    .regist .registLightbox .fb .registFacebookImg {
+      border-radius: 5px;
+      margin-left: 30px;
+      width: 300px;
+      margin-bottom: 10px;
+      transition-duration: .2s; }
+      .regist .registLightbox .fb .registFacebookImg:hover {
+        box-shadow: 1px 1px 5px 2px lightgray; }
+    .regist .registLightbox .fb:hover {
+      cursor: pointer; }
+    .regist .registLightbox .google .registGoogle {
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      position: absolute;
+      left: 145px;
+      top: 160px;
+      color: #666666; }
+    .regist .registLightbox .google .registGoogleImg {
+      border: 1px solid lightgray;
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin-left: 30px;
+      width: 300px;
+      margin-bottom: 10px;
+      transition-duration: .2s; }
+      .regist .registLightbox .google .registGoogleImg:hover {
+        box-shadow: 1px 1px 5px 1px lightgray; }
+    .regist .registLightbox .google:hover {
+      cursor: pointer; }
+    .regist .registLightbox .registForm {
+      text-align: center; }
+      .regist .registLightbox .registForm input {
+        border: 1px solid lightgray;
+        width: 145px;
+        padding: 5px;
+        margin-bottom: 10px;
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd; }
+        .regist .registLightbox .registForm input:focus, .regist .registLightbox .registForm input:hover {
+          border: 1px solid #bbbbbb; }
+      .regist .registLightbox .registForm button {
+        width: 100px;
+        height: 35px;
+        color: white;
+        background-color: #e7a5b1;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 14px;
+        outline: none; }
+        .regist .registLightbox .registForm button:hover {
+          cursor: pointer;
+          background-color: pink;
+          transition-duration: .5s; }
+    .regist .registLightbox .alreadyMember {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 30px; }
+      .regist .registLightbox .alreadyMember span {
+        text-decoration: underline;
+        color: #b15060; }
+        .regist .registLightbox .alreadyMember span:hover {
+          cursor: pointer;
+          color: #7a2f3c;
+          transition-duration: .3s; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
