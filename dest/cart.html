@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- chart -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- icon套件 -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css"> 
+    <script src="./js/nav.js"></script> 
+    <!-- 標籤上的logo -->
+    <link rel="booknark" href="./images/logo.png">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <title>La Petite cour</title>
+</head>
+<body>
+    <style>
+        .nav{
+            display: none;
+        }
+        .nav2{
+            display: block;
+        }
+    </style>
+    <!-- 登入前的nav -->
+<div class="nav" id="nav">
+    <ul class="navUl">
+        <li class="navIcon" onclick="location.href=
+        'index.html';"><img src="./images/LOGOo.png"></li>
+        <li class="navLi navRegister" id="registBtn">註冊</li>
+        <li class="navLi navLogin" id="signIn">登入</li> 
+        <li class="navLi">立即預約</li> 
+        <li class="navLi">聯絡我們</li> 
+        <li class="navLi gallery" onclick="location.href='gallary.html';">作品集</li>
+    </ul>
+</div>
+
+<!-- 登入後的nav -->
+<div class="nav2" id="nav2">
+    <ul class="navUl">
+        <li class="navIcon" onclick="location.href=
+        'index.html';"><img src="./images/LOGOo.png"></li>
+        <li class="navImg"><img src="./images/user.jpg"></li>
+        <li class="navLi navLogout" id="logout">登出</li> 
+        <li class="navLi" onclick="location.href='cart.html';">購物車</li> 
+        <li class="navLi" onclick="location.href='profile.html';">個人檔案</li>
+        <li class="navLi">立即預約</li> 
+        <li class="navLi">聯絡我們</li> 
+        <li class="navLi gallery" onclick="location.href='gallary.html';">作品集</li>
+    </ul>
+</div>
+
+<!-- 登入燈箱 -->
+<div class="login" id="login">
+    <div class="loginLightbox">
+        <img class="loginCross" id="loginCross" src="./images/cross.png">
+        <h2 class="title">
+            <span>登入 La Petite cour</span>
+        </h2>
+        <div class="fb" id="fb">
+            <div class="loginFacebook">使用Facebook帳號登入</div>
+            <img class="loginFacebookImg" src="./images/facebook.png">
+        </div>
+        <div class="google" id="google">
+            <div class="loginGoogle">使用Google帳號登入</div>
+            <img class="loginGoogleImg" src="./images/google.png">
+        </div>       
+        <form action="" class="loginForm">
+            <input type="text" placeholder="請輸入帳號">
+            <input type="password" placeholder="請輸入密碼">
+            <br>
+            <button id="loginFormLogin" type="button">登入</button>
+        </form>
+    </div>
+</div>
+
+<!-- 註冊燈箱 -->
+<div class="regist" id="regist">
+    <div class="registLightbox">
+        <img class="cross" id="cross" src="./images/cross.png">
+        <h2 class="title">
+            <span>註冊 La Petite cour</span>
+        </h2>
+        <div class="fb" id="registFB">
+            <div class="registFacebook">使用Facebook帳號註冊</div>
+            <img class="registFacebookImg" src="./images/facebook.png">
+        </div>
+        <div class="google" id="registGoogle">
+            <div class="registGoogle">使用Google帳號註冊</div>
+            <img class="registGoogleImg" src="./images/google.png">
+        </div>       
+        <form action="" class="registForm">
+            <input type="text" placeholder="請輸入帳號">
+            <input type="password" placeholder="請輸入密碼">
+            <br>
+            <button type="button" id="registFormBtn">註冊</button>
+        </form>
+        <div class="alreadyMember">已經是會員？<span id="alreadyMember">登入</span></div>
+    </div>
+</div>
+    <div class="cart_main-bg">
+    <div class="cart_main">
+        <h2>&nbsp;&nbsp;購物車</h2>
+        <hr>
+        <div class="cartTitle">
+            <div class="name">甲片名稱</div>
+            <div class="price">價格</div>
+            <div class="amount">數量</div>
+            <div class="total">總額</div>
+            <div class="remove"></div>
+        </div>
+        <div class="cartList">
+            <div class="product">
+                <img src="./images/product1.jpg">
+                <div class="productName">Pincky Cloud</div>
+                <div class="productPrice">$500</div>
+                <div class="productAmount">1</div>
+                <div class="productTotal">$500</div>
+                <div class="productRemove">移除</div>
+            </div>
+            <div class="product">
+                <img src="./images/product2.jpg">
+                <div class="productName">Funcky End</div>
+                <div class="productPrice">$100</div>
+                <div class="productAmount">2</div>
+                <div class="productTotal">$200</div>
+                <div class="productRemove">移除</div>
+            </div>
+        </div>
+        <div class="deliverTitle">
+            <h2 class="title">
+                <span>配送方式</span>
+            </h2>
+            <div class="deliverChoose">
+                <label id="deliver1"><input type="radio" name="deliver" checked>宅配</label>
+                <label id="deliver2"><input type="radio" name="deliver">來店黏貼</label>
+                <!-- <label id="deliver3"><input type="radio" name="deliver">來店專人黏貼色</label> -->
+            </div>
+            <div class="deliverDetail1" id="deliverDetail1">
+                <div>&nbsp;&nbsp;&nbsp;宅配地址：<input type="text"></div>
+                <div>收件人姓名：<input type="text"></div>
+                <div>收件人電話：<input type="text"></div>
+                <div class="deliverDetail1Btn"><button>線上付款</button></div>
+            </div> 
+            <div class="deliverDetail2" id="deliverDetail2">
+                <div>選擇店家：<label><input type="checkbox">台北 La Petite cour</label></div>
+                <div>預約時間：<input type="date"></div>
+                <div class="deliverDetail2Btn"><button>確認送出</button></div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- 來店黏貼提示燈箱 -->
+<div class="chooseDeliver2" id="chooseDeliver2">
+    <div class="chooseDeliver2Lightbox">
+        <div class="chooseDeliver2Title">歡迎!!</div>
+        <img class="smile" src="./images/smile.png" alt="">
+        <div class="chooseDeliver2Text1">提醒您</div>
+        <div class="chooseDeliver2Text2">店家黏貼完成後會再當場收取黏貼服務費用喔</div>
+        <div class="chooseDeliver2Btn">
+            <button class="chooseDeliver2Go" id="chooseDeliver2Go">確定</button>     
+        </div>    
+    </div>
+</div>
+    <footer>
+    <div class="footerContent">CopyRight &copy; 2019 La Petite cour</div>
+</footer>
+    <script src="./js/cart.js"></script>
+</body>
+</html>
