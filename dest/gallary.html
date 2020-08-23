@@ -105,7 +105,7 @@
         <hr>
         <br>
         <div class="waterfall">
-            <div class="block two"><img class="photo" src="./images/product1.jpg"><span>253 likes</span><img class="cart" src="./images/cart.png"></div>
+            <div class="block two" id="product1"><img class="photo" src="./images/product1.jpg"><span>253 likes</span><img class="cart" src="./images/cart.png"></div>
             <div class="block three"><img class="photo" src="./images/product2.jpg"><span>4.3k likes</span><img class="cart" src="./images/cart.png"></div>
             <div class="block three"><img class="photo" src="./images/product8.png"><span>673 likes</span><img class="cart" src="./images/cart.png"></div>
             <div class="block one"><img class="photo" src="./images/product4.png"><span>1.4k likes</span><img class="cart" src="./images/cart.png"></div>
@@ -138,8 +138,53 @@
     </div>
 </div>
 
+<!-- 商品詳情燈箱 -->
+<div class="productLightbox-bg" id="productLightbox-bg">
+    <div class="productLightbox">
+        <img class="productCross" id="productCross" src="./images/cross.png">
+        <div class="productLightboxTitle">Wild Ocean</div>   
+        <div class="productPhotos">
+            <div class="productPhoto">
+                <img src="./images/product1.jpg">
+            </div>
+            <div class="productPhoto">
+                <img src="./images/product2.jpg">
+            </div>
+            <div class="productPhoto">
+                <img src="./images/product3.jpg">
+            </div>
+            <div class="productPhoto">
+                <img src="./images/product4.png">
+            </div>
+            <div class="productPhoto">
+                <img src="./images/product5.png">
+            </div>
+        </div> 
+        <div class="productDetail">
+            <div class="productDetail1">
+                <div class="designer">設計師：</div>
+                <div class="designerPhoto"><img src="./images/profilePhoto1.jpg"></div>
+                <div class="designerName">Miss Farroti</div>
+            </div>
+            <div class="productDetail2">
+                <div class="states">說明：</div>
+                <div class="statesContent">設計初衷混合海洋與白浪以及天空中的繁星銀河為概念, 勾勒出夏日夜 晚與喜歡的人散步在白色沙灘上所感受到的環境意象</div>
+            </div>
+            <div class="productDetail3">
+                <div class="price">售價：</div>
+                <div class="money">$700</div>
+            </div>
+        </div>
+        <div class="productLightboxBtn">
+            <button class="like" id="like">Like</button>
+            <button class="addCart">加入購物車</button>
+            <button class="payNow">立即結帳</button>
+        </div>
+    </div>
+</div>
     <footer>
     <div class="footerContent">CopyRight &copy; 2019 La Petite cour</div>
 </footer>
+    <script src="./js/gallary.js"></script>
 </body>
 </html>

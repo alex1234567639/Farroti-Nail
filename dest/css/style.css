@@ -793,6 +793,146 @@ footer {
       .gallary_main-bg .gallary_main .three .photo {
         height: 90%; }
 
+.productLightbox-bg.open {
+  display: block; }
+
+.productLightbox-bg {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .productLightbox-bg .productLightbox {
+    width: 800px;
+    height: 600px;
+    background-color: #FAF4F3;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .productLightbox-bg .productLightbox .productCross {
+      width: 18px;
+      position: absolute;
+      right: 10px;
+      top: 10px; }
+      .productLightbox-bg .productLightbox .productCross:hover {
+        cursor: pointer; }
+    .productLightbox-bg .productLightbox .productLightboxTitle {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 600; }
+    .productLightbox-bg .productLightbox .productPhotos {
+      width: 600px;
+      height: 250px;
+      margin: 0 auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      margin-top: 20px; }
+      .productLightbox-bg .productLightbox .productPhotos .productPhoto {
+        width: 300px;
+        height: 220px;
+        display: inline-block;
+        margin: 10px;
+        position: relative; }
+        .productLightbox-bg .productLightbox .productPhotos .productPhoto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .productLightbox-bg .productLightbox .productDetail {
+      width: 600px;
+      margin: 0 auto; }
+      .productLightbox-bg .productLightbox .productDetail .productDetail1 {
+        margin-bottom: 30px; }
+        .productLightbox-bg .productLightbox .productDetail .productDetail1 .designer {
+          display: inline-block;
+          margin-right: 10px;
+          font-weight: 600;
+          width: 80px;
+          text-align: right; }
+        .productLightbox-bg .productLightbox .productDetail .productDetail1 .designerPhoto {
+          transform: translateY(17px);
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 10px; }
+          .productLightbox-bg .productLightbox .productDetail .productDetail1 .designerPhoto img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover; }
+        .productLightbox-bg .productLightbox .productDetail .productDetail1 .designerName {
+          display: inline-block;
+          font-size: 20px; }
+      .productLightbox-bg .productLightbox .productDetail .productDetail2 {
+        margin-bottom: 20px; }
+        .productLightbox-bg .productLightbox .productDetail .productDetail2 .states {
+          display: inline-block;
+          margin-right: 10px;
+          font-weight: 600;
+          vertical-align: top;
+          width: 80px;
+          text-align: right; }
+        .productLightbox-bg .productLightbox .productDetail .productDetail2 .statesContent {
+          display: inline-block;
+          width: 500px;
+          line-height: 25px; }
+      .productLightbox-bg .productLightbox .productDetail .productDetail3 .price {
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: 600;
+        vertical-align: top;
+        width: 80px;
+        text-align: right; }
+      .productLightbox-bg .productLightbox .productDetail .productDetail3 .money {
+        display: inline-block;
+        color: red;
+        font-size: 20px; }
+    .productLightbox-bg .productLightbox .productLightboxBtn {
+      text-align: center;
+      margin-top: 30px; }
+      .productLightbox-bg .productLightbox .productLightboxBtn .like {
+        width: 100px;
+        height: 35px;
+        color: #e7a5b1;
+        text-align: center;
+        background-color: white;
+        border: 1px solid #e7a5b1;
+        border-radius: 5px;
+        font-size: 14px;
+        outline: none; }
+        .productLightbox-bg .productLightbox .productLightboxBtn .like:hover {
+          cursor: pointer;
+          background-color: #fff6f6;
+          transition-duration: .3s; }
+      .productLightbox-bg .productLightbox .productLightboxBtn .addCart, .productLightbox-bg .productLightbox .productLightboxBtn .payNow {
+        width: 100px;
+        height: 35px;
+        color: white;
+        text-align: center;
+        background-color: #e7a5b1;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 14px;
+        outline: none; }
+        .productLightbox-bg .productLightbox .productLightboxBtn .addCart:hover, .productLightbox-bg .productLightbox .productLightboxBtn .payNow:hover {
+          cursor: pointer;
+          background-color: pink;
+          transition-duration: .3s; }
+
 .dashboard {
   width: 1200px;
   margin: 0 auto;
@@ -896,11 +1036,12 @@ footer {
               display: inline-block;
               transform: translateY(-20px); }
   .dashboard .dashboardRight {
-    width: 870px;
+    width: 875px;
     margin-left: 15px;
     margin-top: 30px;
     display: inline-block;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    position: relative; }
     .dashboard .dashboardRight .dashboardRightTop {
       border: 1px solid #c8c8c8;
       background-color: white; }
@@ -936,7 +1077,7 @@ footer {
             cursor: pointer;
             background-color: #ce5d70; }
       .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent {
-        width: 700px;
+        width: 680px;
         margin-top: 10px;
         display: inline-block;
         vertical-align: top; }
@@ -997,6 +1138,24 @@ footer {
                 cursor: pointer;
                 background-color: #ce5d70;
                 transition-duration: .3s; }
+      .dashboard .dashboardRight .dashboardRightTop .fixBox {
+        position: absolute;
+        top: 50px;
+        right: -50px;
+        display: inline-block;
+        border: 1px solid white;
+        padding: 10px 0;
+        color: white;
+        text-align: center;
+        width: 40px;
+        background-color: #b15060;
+        border: 1px solid #b15060;
+        border-radius: 5px;
+        margin-top: 10px; }
+        .dashboard .dashboardRight .dashboardRightTop .fixBox:hover {
+          cursor: pointer;
+          background-color: #ce5d70;
+          transition-duration: .3s; }
       .dashboard .dashboardRight .dashboardRightTop .cut {
         width: 95%; }
       .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTitle2 {

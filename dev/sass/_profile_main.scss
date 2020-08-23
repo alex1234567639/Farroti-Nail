@@ -131,11 +131,12 @@
         }
     } 
     .dashboardRight{
-        width: 870px;
+        width: 875px;
         margin-left: 15px;
         margin-top: 30px;
         display: inline-block;
         margin-bottom: 50px;
+        position: relative;
         .dashboardRightTop{
             border: 1px solid rgb(200, 200, 200);
             background-color: white;
@@ -179,7 +180,7 @@
             }
             .dashboardRightTopTabContent{
                 // border: 1px solid blue;
-                width: 700px;
+                width: 680px;
                 margin-top: 10px;
                 display: inline-block;
                 vertical-align: top;
@@ -251,6 +252,26 @@
                             }
                         }
                     }                 
+                }
+            }
+            .fixBox{
+                position: absolute;
+                top: 50px;
+                right: -50px;
+                display: inline-block;
+                border: 1px solid white;
+                padding: 10px 0;
+                color: white;
+                text-align: center;
+                width: 40px;
+                background-color: rgb(177, 80, 96);
+                border: 1px solid rgb(177, 80, 96);
+                border-radius: 5px;
+                margin-top: 10px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(206, 93, 112);
+                    transition-duration: .3s;
                 }
             }
             .cut{
