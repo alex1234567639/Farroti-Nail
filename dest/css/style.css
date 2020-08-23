@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 .nav {
   position: fixed;
   top: 0;
@@ -791,6 +792,397 @@ footer {
       .gallary_main-bg .gallary_main .three .photo {
         height: 90%; }
 
+.dashboard {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 20px; }
+  .dashboard h2 {
+    font-size: 24px;
+    letter-spacing: 1px; }
+  .dashboard hr {
+    border-top: 1px dashed gray; }
+  .dashboard .dashboardLeft {
+    position: sticky;
+    top: 80px;
+    left: 0;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-bottom: 50px; }
+    .dashboard .dashboardLeft .dashboardLeftTop {
+      border: 1px solid #c8c8c8;
+      background-color: white;
+      width: 100%; }
+      .dashboard .dashboardLeft .dashboardLeftTop .dashboardPhoto {
+        border: 1px solid #ffe6eb;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 20px; }
+        .dashboard .dashboardLeft .dashboardLeftTop .dashboardPhoto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopTitle {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15px; }
+      .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopName {
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px; }
+      .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopStatus {
+        margin-bottom: 20px;
+        text-align: center; }
+        .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopStatus .dashboardLeftTopStars {
+          margin-top: 15px;
+          width: 100px; }
+        .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopStatus .dashboardLeftTopCounts {
+          display: inline-block;
+          margin-left: 5px; }
+    .dashboard .dashboardLeft .dashboardLeftBot {
+      border: 1px solid #c8c8c8;
+      background-color: white;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center; }
+      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotTitle {
+        margin-top: 20px;
+        display: inline-block;
+        text-align: initial; }
+        .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotTitle .dashboardLeftBotTitleText {
+          margin-bottom: 15px; }
+      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotContent {
+        margin-top: 20px;
+        display: inline-block;
+        text-align: initial;
+        margin-left: 30px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotContent .dashboardLeftBotContentText {
+          color: gray;
+          margin-bottom: 15px; }
+      .dashboard .dashboardLeft .dashboardLeftBot hr {
+        width: 90%; }
+      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide {
+        text-align: initial;
+        width: 255px;
+        margin: 0 auto;
+        margin-top: 20px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideTitle {
+          margin-bottom: 15px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideContent {
+          color: gray;
+          margin-bottom: 30px; }
+          .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideContent ul {
+            margin-left: 40px; }
+            .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideContent ul li .imgBox {
+              margin-right: 10px;
+              width: 50px;
+              height: 50px;
+              display: inline-block;
+              overflow: hidden; }
+              .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideContent ul li .imgBox img {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: contain; }
+            .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideContent ul li .acheiveTitle {
+              display: inline-block;
+              transform: translateY(-20px); }
+  .dashboard .dashboardRight {
+    width: 870px;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 50px; }
+    .dashboard .dashboardRight .dashboardRightTop {
+      border: 1px solid #c8c8c8;
+      background-color: white; }
+      .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTitle {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 170px; }
+      .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton {
+        width: 150px;
+        display: inline-block;
+        vertical-align: auto;
+        padding: 50px 30px;
+        padding-top: 30px;
+        box-sizing: border-box; }
+        .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton .tablinks {
+          width: 80px;
+          height: 35px;
+          color: #b15060;
+          background-color: white;
+          border: 1px solid #b15060;
+          margin: 10px 0;
+          outline: none;
+          transition-duration: .3s; }
+          .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton .tablinks:hover {
+            cursor: pointer;
+            background-color: #fff6f6; }
+        .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton .active {
+          color: white;
+          background-color: #b15060;
+          border: 1px solid #b15060; }
+          .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton .active:hover {
+            cursor: pointer;
+            background-color: #ce5d70; }
+      .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent {
+        width: 700px;
+        margin-top: 10px;
+        display: inline-block;
+        vertical-align: top; }
+        .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent {
+          animation: fadeEffect .5s;
+          padding-bottom: 20px; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+          .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product {
+            width: 220px;
+            display: inline-block;
+            text-align: center; }
+            .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product img {
+              width: 200px;
+              height: 200px; }
+            .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .title {
+              font-weight: 600;
+              margin: 5px 0; }
+            .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .content {
+              text-align: center; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .content .earned {
+                margin-bottom: 5px;
+                font-size: 14px;
+                text-align: left;
+                display: inline-block; }
+                .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .content .earned span {
+                  font-size: 16px;
+                  color: red; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .content .sold {
+                display: inline-block;
+                font-size: 14px;
+                text-align: left; }
+            .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .offShelf {
+              width: 70px;
+              height: 30px;
+              color: #b15060;
+              background-color: white;
+              border: 1px solid #b15060;
+              border-radius: 5px;
+              margin-top: 10px; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .offShelf:hover {
+                cursor: pointer;
+                background-color: #fff6f6;
+                transition-duration: .3s; }
+            .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .putShelf {
+              width: 70px;
+              height: 30px;
+              color: white;
+              background-color: #b15060;
+              border: 1px solid #b15060;
+              border-radius: 5px;
+              margin-top: 10px; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .product .putShelf:hover {
+                cursor: pointer;
+                background-color: #ce5d70;
+                transition-duration: .3s; }
+      .dashboard .dashboardRight .dashboardRightTop .cut {
+        width: 95%; }
+      .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTitle2 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 135px; }
+      .dashboard .dashboardRight .dashboardRightTop #bar-chart {
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 20px; }
+    .dashboard .dashboardRight .dashboardRightBot {
+      border: 1px solid #c8c8c8;
+      background-color: white;
+      margin-top: 30px; }
+      .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft {
+        width: 300px;
+        display: inline-block;
+        margin-top: 20px; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft img {
+          width: 100px;
+          margin-left: 30px; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .dashboardRightBotLeftComment {
+          display: inline-block;
+          font-size: 14px;
+          margin-left: 5px;
+          transform: translateY(-2px); }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress {
+          margin: 0 auto;
+          margin-top: 10px;
+          position: relative;
+          width: 80%;
+          height: 20px;
+          background-color: #ebebeb;
+          box-sizing: border-box; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress:hover .myBar {
+            background-color: pink; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress .myBar {
+            position: absolute;
+            height: 100%;
+            background-color: #e7a5b1;
+            transition-duration: .5s; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress .myBar .myBarLabel {
+              margin-left: 5px;
+              line-height: 20px;
+              color: #f1f1f1; }
+      .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight {
+        width: 500px;
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 20px;
+        vertical-align: top; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightTitle {
+          font-weight: 600;
+          font-size: 20px;
+          margin-bottom: 10px; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightHot {
+          padding-bottom: 45px;
+          border-bottom: 1px solid #c8c8c8;
+          height: 40px;
+          margin-top: 5px; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightHot .dashboardRightBotRightHotImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightHot .dashboardRightBotRightHotImg img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightHot .dashboardRightBotRightHotComment {
+            display: inline-block;
+            margin-left: 5px;
+            transform: translateY(-13px); }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightBtn {
+          width: 80px;
+          height: 33px;
+          color: #b15060;
+          background-color: white;
+          border: 1px solid #b15060;
+          border-radius: 5px;
+          margin-top: 10px;
+          float: right; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightBtn:hover {
+            cursor: pointer;
+            background-color: #fff6f6;
+            transition-duration: .5s; }
+      .dashboard .dashboardRight .dashboardRightBot hr {
+        width: 95%;
+        margin-top: 20px; }
+      .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment {
+        width: 95%;
+        margin: 0 auto;
+        position: relative; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentTitle {
+          font-weight: 600;
+          font-size: 20px;
+          margin-top: 20px;
+          margin-bottom: 30px; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect {
+          padding: 4px 8px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd;
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          top: 0;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+          background-position: right 10px top 50%;
+          background-repeat: no-repeat;
+          background-size: 10px; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect:focus, .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect:hover {
+            border: 1px solid #bbbbbb; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect option {
+            background: #ffffff; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem {
+          width: 100%;
+          height: 90px;
+          background-color: #f0f0f0;
+          padding: 5px;
+          box-sizing: border-box;
+          position: relative;
+          margin-bottom: 20px; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo {
+            display: inline-block;
+            width: 70px;
+            text-align: center;
+            margin-left: 10px; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo .commentItemPersonPhoto {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-bottom: 5px; }
+              .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo .commentItemPersonPhoto img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo .commentItemPersonName {
+              font-weight: 600;
+              width: 60px;
+              text-align: center;
+              font-size: 14px; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside {
+            width: 105px;
+            display: inline-block;
+            font-size: 14px; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside .commentItemInsideStatus {
+              color: gray;
+              margin-bottom: 10px; }
+              .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside .commentItemInsideStatus img {
+                margin-left: 3px;
+                width: 15px;
+                transform: translateY(2px); }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside .commentItemInsideFlag {
+              width: 30px;
+              margin-bottom: 5px; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside .commentItemInsideCountry {
+              display: inline-block;
+              color: gray; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemMessageComment {
+            border: 1px solid #e6e6e6;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            background-color: white;
+            display: inline-block;
+            width: 500px;
+            position: absolute;
+            right: 120px;
+            top: 30px;
+            letter-spacing: .5px;
+            line-height: 20px;
+            overflow: hidden; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemMessageTime {
+            display: inline-block;
+            font-size: 14px;
+            color: gray;
+            position: absolute;
+            right: 20px;
+            top: 68px; }
+
 * {
   font-family: Microsoft JhengHei;
   letter-spacing: .5px;
@@ -799,3 +1191,6 @@ footer {
 
 body {
   background-color: #FAF4F3; }
+
+button {
+  outline: none; }

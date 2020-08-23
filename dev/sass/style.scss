@@ -3,6 +3,7 @@
 @import "landingPage";
 @import "footer";
 @import "gallary_main";
+@import "profile_main";
 *{
     font-family: Microsoft JhengHei; 
     letter-spacing: .5px;
@@ -11,4 +12,7 @@
 }
 body{
     background-color: #FAF4F3;
+}
+button{
+    outline: none;
 }

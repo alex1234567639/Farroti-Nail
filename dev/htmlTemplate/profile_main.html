@@ -1,0 +1,244 @@
+<div class="dashboard">
+    <h2>&nbsp;&nbsp;個人檔案</h2>
+    <hr>
+    <div class="dashboardLeft">
+        <div class="dashboardLeftTop">
+            <div class="dashboardPhoto"><img src="./images/user.jpg"></div>
+            <div class="dashboardLeftTopTitle">透明甲片設計達人</div>
+            <div class="dashboardLeftTopName">法洛提夫人</div>
+            <div class="dashboardLeftTopStatus">
+                <img class="dashboardLeftTopStars" src="./images/stars.png">
+                <span class="dashboardLeftTopCounts">(15)</span>
+            </div>    
+        </div>
+        <div class="dashboardLeftBot">
+            <div class="dashboardLeftBotTitle">
+                <div class="dashboardLeftBotTitleText">國家或地區</div>
+                <div class="dashboardLeftBotTitleText">會員時間</div>
+                <div class="dashboardLeftBotTitleText">回覆時間</div>
+                <div class="dashboardLeftBotTitleText">上次完成專案時間</div>
+                
+            </div>
+            <div class="dashboardLeftBotContent">
+                <div class="dashboardLeftBotContentText">台灣</div>
+                <div class="dashboardLeftBotContentText">2020/06/03</div>
+                <div class="dashboardLeftBotContentText">20分鐘內</div>
+                <div class="dashboardLeftBotContentText">1小時前</div>
+            </div>
+            <hr>
+            <div class="dashboardLeftBotProvide">
+                <div class="dashboardLeftBotProvideTitle">我的徽章</div>
+                <div class="dashboardLeftBotProvideContent">
+                    <ul>
+                        <li>
+                            <div class="imgBox"><img src="./images/acheive2.png"></div>
+                            <div class="acheiveTitle">透明甲片大師</div>
+                        </li>
+                        <li>
+                            <div class="imgBox"><img src="./images/acheive1.jpg"></div>
+                            <div class="acheiveTitle">當月最火紅</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dashboardRight">
+        <div class="dashboardRightTop">
+            <div class="dashboardRightTopTitle">我的作品</div>
+            <div class="dashboardRightTopTabButton">
+                <button id="dashboardRightTopTabButton1" class="tablinks" onclick="tabChange(event, 'dashboardRightTopTabContent1')">已上架</button><br>
+                <button id="dashboardRightTopTabButton2" class="tablinks" onclick="tabChange(event, 'dashboardRightTopTabContent2')">未上架</button><br>
+                <!-- <button id="dashboardRightTopTabButton3" class="tablinks" onclick="tabChange(event, 'dashboardRightTopTabContent3')">收益統計</button><br> -->
+            </div>
+            <div class="dashboardRightTopTabContent">
+                <div id="dashboardRightTopTabContent1" class="tabcontent">
+                    <div class="product">
+                        <img src="./images/product1.jpg">
+                        <div class="title">Pincky Cloud</div>
+                        <div class="content">
+                            <div class="earned">收益：<span> $3200</span></div><br>
+                            <div class="sold">售出： 20組</div>
+                        </div>
+                        <button class="offShelf">下架</button> 
+                    </div>  
+                    <div class="product">
+                        <img src="images/product2.jpg">
+                        <div class="title">Cool Black</div>
+                        <div class="content">
+                            <div class="earned">收益：<span> $200</span></div><br>
+                            <div class="sold">售出： 2組</div>
+                        </div>
+                        <button class="offShelf">下架</button> 
+                    </div> 
+                    <div class="product">
+                        <img src="./images/product8.png">
+                        <div class="title">Funcky End</div>
+                        <div class="content">
+                            <div class="earned">收益：<span> $1090</span></div><br>
+                            <div class="sold">售出： 10組</div>
+                        </div>
+                        <button class="offShelf">下架</button> 
+                    </div>                                  
+                </div>
+                <div id="dashboardRightTopTabContent2" class="tabcontent">
+                    <div class="product">
+                        <img src="./images/product3.jpg">
+                        <div class="title">Funcky End</div>
+                        <div class="content">
+                            <div class="earned">收益：<span> $0</span></div><br>
+                            <div class="sold">售出： 0組</div>
+                        </div>
+                        <button class="putShelf">上架</button> 
+                    </div>  
+                    <div class="product">
+                        <img src="images/product9.png">
+                        <div class="title">Cool Black</div>
+                        <div class="content">
+                            <div class="earned">收益：<span> $100</span></div><br>
+                            <div class="sold">售出： 1組</div>
+                        </div>
+                        <button class="putShelf">上架</button> 
+                    </div>
+                </div>
+            </div>
+            <hr class="cut">
+            <div class="dashboardRightTopTitle2">收益統計</div>
+            <div id="bar-chart"></div>
+        </div>
+        <div class="dashboardRightBot">
+            <div class="dashboardRightBotLeft">
+                <img src="./images/stars.png">
+                <div class="dashboardRightBotLeftComment">15則評論</div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:80%;">
+                        <div class="myBarLabel">5★</div>
+                    </div>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:70%;">
+                        <div class="myBarLabel">4★</div>
+                    </div>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:40%;">
+                        <div class="myBarLabel">3★</div>
+                    </div>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:10%;">
+                        <div class="myBarLabel">2★</div>
+                    </div>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:15%;">
+                        <div class="myBarLabel">1★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboardRightBotRight">
+                <div class="dashboardRightBotRightTitle">熱門評論</div>
+                <div class="dashboardRightBotRightHot">
+                    <div class="dashboardRightBotRightHotImg"><img src="./images/profilePhoto1.jpg"></div>
+                    <div class="dashboardRightBotRightHotComment">超級專業！價格也很合理，往後還會找你喔！</div>
+                </div> 
+                <div class="dashboardRightBotRightHot">
+                    <div class="dashboardRightBotRightHotImg"><img src="./images/profilePhoto2.jpg"></div>
+                    <div class="dashboardRightBotRightHotComment">Amazing！</div>
+                </div>
+                <div class="dashboardRightBotRightHot">
+                    <div class="dashboardRightBotRightHotImg"><img src="./images/profilePhoto3.jpg"></div>
+                    <div class="dashboardRightBotRightHotComment">好滿意！</div>
+                </div>    
+                <button class="dashboardRightBotRightBtn">評論</button>         
+            </div>
+            <hr>
+            <div class="dashboardRightBotAllComment">
+                <div class="dashboardRightBotAllCommentTitle">所有評論</div>
+                <select class="dashboardRightBotAllCommentSelect" style="width:158px">
+                    <option value="">最新評論</option>
+                    <option value="">最舊評論</option>
+                    <option value="">最高評分</option>
+                    <option value="">最低評分</option>
+                </select>
+
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/profilePhoto4.jpg"></div>
+                        <div class="commentItemPersonName">Alley</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">5<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/usFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">United States</div>
+                    </div>
+                    <div class="commentItemMessageComment">設計師真的好厲害，非常細心！下次還會找她～</div>
+                    <div class="commentItemMessageTime">發佈於2天前</div>
+                </div>
+                <!-- 評論留言end -->
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/profilePhoto5.jpg"></div>
+                        <div class="commentItemPersonName">蔡小綾</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">4<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/taiwanFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">Taiwan</div>
+                    </div>
+                    <div class="commentItemMessageComment">我會推薦給朋友！</div>
+                    <div class="commentItemMessageTime">發佈於2天前</div>
+                </div>
+                <!-- 評論留言end -->
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/profilePhoto1.jpg"></div>
+                        <div class="commentItemPersonName">築築</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">5<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/taiwanFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">Taiwan</div>
+                    </div>
+                    <div class="commentItemMessageComment">超級專業！價格也很合理，往後還會找你喔！</div>
+                    <div class="commentItemMessageTime">發佈於3天前</div>
+                </div>
+                <!-- 評論留言end -->
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/profilePhoto6.jpeg"></div>
+                        <div class="commentItemPersonName">Grace</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">5<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/franceFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">France</div>
+                    </div>
+                    <div class="commentItemMessageComment">Thanks u so much!</div>
+                    <div class="commentItemMessageTime">發佈於5天前</div>
+                </div>
+                <!-- 評論留言end -->
+
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/profilePhoto7.jpg"></div>
+                        <div class="commentItemPersonName">林曉萱</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">5<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/taiwanFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">Taiwan</div>
+                    </div>
+                    <div class="commentItemMessageComment">設計師超～好～聊～</div>
+                    <div class="commentItemMessageTime">發佈於7天前</div>
+                </div>
+                <!-- 評論留言end -->
+            </div>
+        </div>
+    </div>
+</div>
