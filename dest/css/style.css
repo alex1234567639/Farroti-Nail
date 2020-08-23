@@ -737,7 +737,8 @@ footer {
     padding-top: 50px; }
     .gallary_main-bg .gallary_main h2 {
       font-size: 24px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      color: #5c5c5c; }
     .gallary_main-bg .gallary_main hr {
       border-top: 1px dashed gray; }
     .gallary_main-bg .gallary_main .waterfall {
@@ -799,7 +800,8 @@ footer {
   padding-top: 20px; }
   .dashboard h2 {
     font-size: 24px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    color: #5c5c5c; }
   .dashboard hr {
     border-top: 1px dashed gray; }
   .dashboard .dashboardLeft {
@@ -1191,7 +1193,8 @@ footer {
     padding-top: 50px; }
     .cart_main-bg .cart_main h2 {
       font-size: 24px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      color: #5c5c5c; }
     .cart_main-bg .cart_main hr {
       border-top: 1px dashed gray; }
     .cart_main-bg .cart_main .cartTitle {
