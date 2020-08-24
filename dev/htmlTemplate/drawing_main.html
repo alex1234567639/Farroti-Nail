@@ -1,0 +1,46 @@
+<div class="drawing">
+    <h2>&nbsp;&nbsp;繪製甲片</h2>
+    <hr>
+    <div class="drawingBoard">
+        <div class="drawingBoardMain">
+            <img class="finger" src="./images/finger.png">
+            <!-- <div class="showPhoto" id="showPhoto2"><img id="imgPreview2" src=""></div> -->
+            <div class="showPhoto" id="showPhoto2"><img id="canvas" src=""></div>
+            <div class="adjust">
+                <label for="hue">色調</label>
+                <input id="hue" name="hue" type="range" min="0" max="300" value="0">
+                <label for="contrast">對比</label>
+                <input id="contrast" name="contrast" type="range" min="-20" max="20" value="0">
+                <label for="vibrance">飽和</label>
+                <input id="vibrance" name="vibrance" type="range" min="0" max="400" value="0">
+                <label for="sepia">亮度</label>
+                <input id="sepia" name="sepia" type="range" min="0" max="100" value="0">
+            </div>
+            <nav class="filters">
+                <button id="resetbtn" class="btn btn-success">重置改動</button>
+                <button id="noisebtn" class="btn btn-primary">顆粒</button>
+                <button id="vintagebtn" class="btn btn-primary">復古</button>
+                <button id="embossbtn" class="btn btn-primary">浮雕</button>
+            </nav>
+            <nav class="filters">
+                <button id="radialblurbtn" class="btn btn-primary">邊框模糊</button>
+                <button id="sunrisebtn" class="btn btn-primary">清晨</button>
+                <button id="crossprocessbtn" class="btn btn-primary">溫煦</button>
+                <button id="hdrbtn" class="btn btn-warning">HDR效果</button>
+            </nav>       
+        </div>
+        <div class="drawingBoardAddPhoto">
+            <div class="showPhoto" id="showPhoto"><img id="imgPreview" src=""></div>
+            <div class="choosePhoto">
+                <label class="chooseFile" id="chooseFileLabel" for="chooseFile">
+                    ＋選擇照片
+                    <input type="file" name="chooseFile" id="chooseFile">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="drawingBtn">
+        <button class="save">儲存</button>
+        <button class="cancel">取消</button>
+    </div>
+</div>

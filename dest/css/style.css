@@ -1606,6 +1606,137 @@ footer {
           background-color: pink;
           transition-duration: .5s; }
 
+.drawing {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 20px; }
+  .drawing h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #5c5c5c; }
+  .drawing hr {
+    border-top: 1px dashed gray; }
+  .drawing .drawingBoard {
+    width: 1200px; }
+    .drawing .drawingBoard .drawingBoardMain {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      width: 900px;
+      height: 700px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      text-align: center;
+      position: relative; }
+      .drawing .drawingBoard .drawingBoardMain .finger {
+        height: 450px;
+        margin: 0 auto;
+        margin-top: 29px; }
+      .drawing .drawingBoard .drawingBoardMain .showPhoto {
+        position: absolute;
+        top: 30px;
+        right: 250px;
+        z-index: -1;
+        border: 1px dashed #b15060;
+        width: 400px;
+        height: 380px;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: none; }
+        .drawing .drawingBoard .drawingBoardMain .showPhoto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center; }
+      .drawing .drawingBoard .drawingBoardMain .adjust {
+        text-align: center;
+        margin-bottom: 30px; }
+        .drawing .drawingBoard .drawingBoardMain .adjust input[type=range] {
+          width: 100px;
+          outline: none;
+          transform: translateY(2px);
+          margin-right: 15px; }
+      .drawing .drawingBoard .drawingBoardMain .filters button {
+        width: 90px;
+        height: 33px;
+        color: white;
+        background-color: #ce5d70;
+        border: 1px solid #ce5d70;
+        border-radius: 5px;
+        margin: 7px; }
+        .drawing .drawingBoard .drawingBoardMain .filters button:hover {
+          cursor: pointer;
+          background-color: #d66175;
+          transition-duration: .3s; }
+    .drawing .drawingBoard .drawingBoardAddPhoto {
+      border: 1px solid lightgray;
+      background-color: #fff;
+      border-radius: 5px;
+      width: 250px;
+      height: 500px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      text-align: center; }
+      .drawing .drawingBoard .drawingBoardAddPhoto .showPhoto {
+        border: 1px dashed #b15060;
+        width: 220px;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: none; }
+        .drawing .drawingBoard .drawingBoardAddPhoto .showPhoto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center; }
+      .drawing .drawingBoard .drawingBoardAddPhoto .choosePhoto {
+        border: 1px dashed #b15060;
+        width: 220px;
+        height: 150px;
+        margin: 0 auto;
+        padding-top: 63px;
+        margin-top: 10px; }
+        .drawing .drawingBoard .drawingBoardAddPhoto .choosePhoto label.chooseFile {
+          color: #b15060; }
+          .drawing .drawingBoard .drawingBoardAddPhoto .choosePhoto label.chooseFile:hover {
+            cursor: pointer;
+            color: #7a2f3c;
+            transition-duration: .3s; }
+          .drawing .drawingBoard .drawingBoardAddPhoto .choosePhoto label.chooseFile #chooseFile {
+            display: none; }
+  .drawing .drawingBtn {
+    text-align: center;
+    margin-top: 30px;
+    width: 930px; }
+    .drawing .drawingBtn .save {
+      width: 100px;
+      height: 35px;
+      color: white;
+      background-color: #b15060;
+      border: 1px solid #b15060;
+      border-radius: 5px;
+      margin-top: 10px; }
+      .drawing .drawingBtn .save:hover {
+        cursor: pointer;
+        background-color: #ce5d70;
+        transition-duration: .3s; }
+    .drawing .drawingBtn .cancel {
+      width: 100px;
+      height: 35px;
+      color: #b15060;
+      text-align: center;
+      background-color: white;
+      border: 1px solid #b15060;
+      border-radius: 5px;
+      font-size: 14px;
+      outline: none; }
+      .drawing .drawingBtn .cancel:hover {
+        cursor: pointer;
+        background-color: #fff6f6;
+        transition-duration: .3s; }
+
 * {
   font-family: Microsoft JhengHei;
   letter-spacing: .5px;
