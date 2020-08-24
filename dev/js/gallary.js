@@ -13,4 +13,17 @@ window.addEventListener("load",function(){
         document.getElementById('like').style.color = 'white';
         document.getElementById('like').style.backgroundColor = 'rgb(231,165,177)';
     }
+
+    // 點擊購物車，nav數字+1
+    let x = 0;
+    $('.cart').on('click',function(){
+        x++;
+        document.getElementById('cartAmount').innerText = ' ' + x + ' ';
+        return x;
+    })
+    $('.addCart').on('click',function(){
+        x++;
+        document.getElementById('cartAmount').innerText = ' ' + x + ' ';
+        return x;
+    })
 },false);

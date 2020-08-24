@@ -70,6 +70,8 @@
         transition-duration: .3s;
         transform: rotate(5deg);
         color: #e7a5b1; }
+      .nav2 .navUl .navLi .cartAmount {
+        color: #b15060; }
     .nav2 .navUl .navLogout {
       color: #b15060;
       width: 50px; }
