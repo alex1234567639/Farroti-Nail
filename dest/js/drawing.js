@@ -8,7 +8,9 @@ window.addEventListener("load", function(){
             document.getElementById("showPhoto").style.display = 'block';
             document.getElementById("imgPreview").src = reader.result;
             document.getElementById("showPhoto2").style.display = 'block';
-			document.getElementById("canvas").src = reader.result;
+            document.getElementById("canvas").src = reader.result;
+            document.getElementById("canvas").style.width = '400px';
+            document.getElementById("canvas").style.height = '380px';
 		}
 		reader.readAsDataURL(file);
 	}

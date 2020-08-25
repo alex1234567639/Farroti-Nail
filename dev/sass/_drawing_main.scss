@@ -61,6 +61,7 @@
             .filters{
                 // margin-bottom: 10px;
                 button{
+                    font-size: 16px;
                     width: 90px;
                     height: 33px;
                     color: white;
@@ -126,6 +127,7 @@
         margin-top: 30px;
         width: 930px;
         .save{
+            font-size: 16px;
             width: 100px;
             height: 35px;
             color: white;
@@ -139,7 +141,8 @@
                 transition-duration: .3s;
             }
         }
-        .cancel{
+        .nosave{
+            font-size: 16px;
             width: 100px;
             height: 35px;
             color: rgb(177, 80, 96);
@@ -147,7 +150,6 @@
             background-color: white;
             border: 1px solid rgb(177, 80, 96);
             border-radius: 5px;
-            font-size: 14px;
             outline: none;
             &:hover{
                 cursor: pointer;
